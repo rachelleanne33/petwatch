@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Owner Login</title>
+	<meta charset = "utf-8"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<header class = "container">
+		<nav class="col-sm-4 col-sm-offset-8 text-right">
+   	    		<a class="btn btn-nav" href="index.html" role="button"><b>HOME</b></a>
+			<a class="btn btn-nav" href="about.html" role="button"><b>ABOUT</b></a>
+       			<a class="btn btn-nav" href="contact.html" role="button"><b>CONTACT</b></a>
+		</nav>
+
+		<div class = "row">
+			<h1 class = "col-sm-16">PetWatch</h1>
+		</div>
+	</header>
+
+	<section class = "jumbotron">
+		<div class = "container text-center">
+			<h2>Owner Login</h3>
+			<div class = "row text-center tranbox">
+				<form name="ownerLogin" method="post" action="ownerLogin.php">
+					<div class="row">
+						<p class="col-sm-4 col-md-offset-2">
+							<label="email"><b>Email</b></label><br>
+							<input name="email" id="email" type="text" placeholder="Enter Email" required>
+						</p>
+						<p class="col-sm-4">
+							<label="password"><b>Password</b></label><br>
+							<input name="password" id="password" type="password" placeholder="Enter Password" required>
+						</p>
+					</div>
+					<button name="Submit" id="submit" class="btn btn-success" type="submit">Log In</button>
+					<br>
+				</form>
+				<br><br>
+				<p>Don't have an account? Sign up now!</P>
+				<a class="btn btn-succcess" href="ownerRegister.html">Register</a>
+				<br>
+			</div>
+		</div>
+	</section>
+	
+</body>
+</html>

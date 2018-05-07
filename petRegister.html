@@ -1,0 +1,79 @@
+<html lang = "en">
+	<head>
+		<title>Add Pet</title>
+		<meta charset = "utf-8"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<header class = "container">
+		<nav class="col-sm-4 col-sm-offset-8 text-right">
+   	    		<a class="btn btn-nav" href="index.html" role="button"><b>HOME</b></a>
+			<a class="btn btn-nav" href="about.html" role="button"><b>ABOUT</b></a>
+       			<a class="btn btn-nav" href="contact.html" role="button"><b>CONTACT</b></a>
+		</nav>
+
+		<div class = "row">
+			<h1 class = "col-sm-16">PetWatch</h1>
+	</div>
+	</header>
+	<div class = "petData">
+		<section class = "jumbotron">
+			<div class = "container text-center">
+				<h2>Add Pet</h3>
+				<form class = "form-horizontal col-md-6 col-md-offset-3 tranbox" name = "ownerRegister" method="post" action = "petRegister.php">
+					<p>Enter some information about your pet!</p>
+					<label class = "control-label" for "name"><b>Pet's Name</b></label>
+					<input align = "right" name="name" id = "name" type= "text" placeholder = "Pet Name" required>
+					<br/>
+					<label class = "control-label" for "serial"><b>Collar Serial Number</b></label>
+					<input name = "serial" id = "serial" type = "text" placeholder = "Serial Number" required>
+					<br/>
+					<label class = "control-label" for "weight"><b>Weight</b></label>
+					<input name="weight" id = "weight" type= "text" placeholder = "Weight" required>
+					<br/>
+					<label class = "control-label" for "height"><b>Height</b></label>
+					<input name="height" id = "height" type= "text" placeholder = "Height" required>
+					<br/>
+					<label class = "control-label" for "age"><b>Age</b></label>
+					<input name="age" id = "age" type= "age" placeholder = "age" required>
+					<br/>
+					<label class = "control-label" id = "odd" for = "sel"><b>Select the type of pet</b></label>
+					<select id = "sel" class = "form-control" style="width:150px;"required>
+						<option name = "type" id = "type">Dog</option>
+						<option name = "type" id = "type">Cat</option>
+  						<option name = "type" id = "type">Other</option>
+					</select>	
+					<br/>
+					<button name="Submit" id = "submit" class = "btn btn-success" type="submit">Save</button>
+					<br/>
+				</form>
+			</div>
+		</section>
+	</div>
+</body>
+
+<style>
+select {
+display: block;
+margin: 0 auto;
+margin-bottom: 1%;
+}
+label{
+	width: 140px;
+	margin: 5px;
+	margin-left: 0px;
+}
+button{
+	margin: 10px;
+}
+#odd{
+	width: 150px;
+}
+</style>
+<!--.norm{
+width: 10em; 
+margin-right: 3px; 
+text-align: right; 
+}-->

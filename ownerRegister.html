@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title>Owner Registration</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+	<header class = "container">
+		<nav class="col-sm-4 col-sm-offset-8 text-right">
+   	    		<a class="btn btn-nav" href="index.html" role="button"><b>HOME</b></a>
+			<a class="btn btn-nav" href="about.html" role="button"><b>ABOUT</b></a>
+       			<a class="btn btn-nav" href="contact.html" role="button"><b>CONTACT</b></a>
+		</nav>
+
+		<div class = "row">
+			<h1 class = "col-sm-16">PetWatch</h1>
+		</div>
+	</header>
+
+        <section class = "jumbotron">
+                <div class = "container">
+			<div class = "row text-center">
+			<h2>Owner Registration</h2>
+			<form class = "col-md-6 col-md-offset-3 form-horizontal tranbox" name = "ownerRegister" method="post" action = "ownerRegister.php">
+				<p>Register for your account! </p>
+				<label class = "control-label" for = "first_name"><b>First Name</b></label>
+				<input name="first_name" id = "first_name" type= "text" placeholder = "First Name" required>
+				<br/>
+				<label class = "control-label" for = "last_name"><b>Last Name</b></label>
+				<input name="last_name" id = "last_name" type= "text" placeholder = "Last Name" required>
+				<br/>
+				<label class = "control-label" for = "email"><b>Email</b></label>
+				<input name="email" id = "email" type= "email" placeholder = "Email" required>
+				<br/>
+				<label class = "control-label for= "password""><b>Password</b></label>
+				<input name="password" id = "password" type="password" placeholder = "Enter Password" required>
+				<br/>
+				<button name="Submit" id = "submit" class = "btn btn-success" type="submit">Register</button>
+				<br/>
+			</form>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
+<style>
+label{
+	width: 80px;
+	margin: 5px;
+}
+button{
+	margin: 30px;
+}
+</style>
